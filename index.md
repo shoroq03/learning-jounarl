@@ -1,5 +1,4 @@
 
-**LINUX-TUTORIALS**
 
 # Text editor 
  
