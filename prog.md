@@ -33,5 +33,3 @@ The reason for this, as explained in the MDN Docs is that an arrow function wrap
 const Button = () => {
     return <button>Hello world</button>
 }
-
-
