@@ -1,0 +1,35 @@
+**Webscript**, a computer programming language for adding dynamic capabilities to 
+World Wide Web pages. ... The CGI component on the server contains small programs 
+called scripts that take information from the browser system or provide 
+it for 
+
+JavaScript function is a block of code designed to perform a particular task.
+and executed when "something" invokes it (calls it).
+
+Example of function 
+function name(parameter1, parameter2, parameter3) {
+  // code to be executed
+}
+Function parameters are listed inside the parentheses () in the function definition.
+Function arguments are the values received by the function when it is invoked.
+Inside the function, the arguments (the parameters) behave as local variables.
+ 
+ Function Expressions
+
+ 8
+
+In my case I had curly braces where it should have been parentheses.
+
+const Button = () => {
+    <button>Hello world</button>
+}
+Where it should have been:
+
+const Button = () => (
+    <button>Hello world</button>
+)
+The reason for this, as explained in the MDN Docs is that an arrow function wrapped by () will return the value it wraps, so if I wanted to use curly braces I had to add the return keyword, like so:
+
+const Button = () => {
+    return <button>Hello world</button>
+}
